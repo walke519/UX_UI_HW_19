@@ -65,8 +65,9 @@ ul {
 
 .content {
     width: 700px;
+    padding: 0;
     margin-left: 145px;
-    margin-top: 250px;
+    margin-top: 170px;
 }
 
 h1 {
@@ -76,6 +77,41 @@ h1 {
 h2 {
     font-size: 40px;
 }
+
+/*Arrow Animation*/
+
+.arrow {
+    text-align: center;
+}
+
+.arrow img {
+    width: 200px;
+    padding: 0;
+    transition: opacity 5s ease;
+}
+
+.bounce {
+    animation: bounceArrow .7s infinite
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+@keyframes bounceArrow {
+    from {
+      margin-top: 0px;
+    }
+  
+    50% {
+      margin-top: 7px;
+    }
+  
+    to {
+      margin-top: 0px;
+    }
+  }
 
 /*About Section*/
 
